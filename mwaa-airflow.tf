@@ -5,7 +5,7 @@ module "mwaa" {
   source = "../.."
 
   name              = var.name
-  airflow_version   = "2.2.2"
+  airflow_version   = "2.8.1"    # Update version, taken from here: https://docs.aws.amazon.com/mwaa/latest/userguide/airflow-versions.html#airflow-versions-official
   environment_class = "mw1.medium"
   create_s3_bucket  = false
   source_bucket_arn = aws_s3_bucket.this.arn
@@ -13,7 +13,7 @@ module "mwaa" {
 
   ## If uploading requirements.txt or plugins, you can enable these via these options
   #plugins_s3_path      = "plugins.zip"
-  #requirements_s3_path = "requirements.txt"
+  requirements_s3_path = "requirements.txt"
 
   logging_configuration = {
     dag_processing_logs = {
