@@ -5,7 +5,7 @@
   
 # Upload DAGS
 resource "aws_s3_object" "object1" {
-  for_each = fileset("dags/", "*")
+  for_each = fileset("dags/dags/", "*")
   bucket   = aws_s3_bucket.this.id
   key      = "dags/${each.value}"
   source   = "dags/${each.value}"
@@ -14,7 +14,7 @@ resource "aws_s3_object" "object1" {
 
 # Upload plugins/requirements.txt
 resource "aws_s3_object" "reqs" {
-  for_each = fileset("mwaa/", "*")
+  for_each = fileset("dags/mwaa/", "*")
   bucket   = aws_s3_bucket.this.id
   key      = each.value
   source   = "mwaa/${each.value}"
