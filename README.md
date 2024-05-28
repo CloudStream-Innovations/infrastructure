@@ -4,7 +4,7 @@ This repo contains the Terraform IaC for this project.
 
 ## Description
 
-The Terraform code will deploys the following Amazon MWAA with VPC
+The Terraform code will deploy the following Amazon MWAA with VPC
 
 - Creates a new sample VPC, 2 Private Subnets and 2 Public Subnets
 - Creates Internet gateway for Public Subnets and NAT Gateway for Private Subnets
