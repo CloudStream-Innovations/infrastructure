@@ -41,5 +41,5 @@ terraform apply
 
 ## Testing
 
-TO DO: Put in place a Github Action for this repo that tests the IaC against Local Stack
-TO DO: See if it is possible to update the sub module on the main-solution if the test passes
+- TO DO: Put in place a Github Action for this repo that tests the IaC against Local Stack
+- TO DO: See if it is possible to update the sub module on the main-solution if the test passes
