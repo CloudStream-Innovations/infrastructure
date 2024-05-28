@@ -2,6 +2,12 @@
 
 This repo contains the Terraform IaC for this project.
 
+## TOC
+
+Description
+Deployment
+Testing
+
 ## Description
 
 The Terraform code will deploy the following Amazon MWAA with VPC
@@ -18,4 +24,22 @@ Image Source: https://docs.aws.amazon.com/mwaa/latest/migrationguide/mwaa-archit
 
 ![mwaa-architecture](img/mwaa-architecture.png)
 
+## Deployment
 
+:pencil: This repo will become a sub module of the main solution, therefore limited deployment instructions are listed below, rather use the main solutions repo found here: https://github.com/CloudStream-Innovations/main-solution
+
+### Terraform Deployment
+
+Please review a tutorial such as for detailed instructions on deploying a Terraform solution like this one: https://medium.com/@rizkiprass/beginner-terraform-tutorial-launching-ec2-in-aws-using-terraform
+
+#### Basic commands
+
+```
+terraform plan
+terraform apply
+```
+
+## Testing
+
+TO DO: Put in place a Github Action for this repo that tests the IaC against Local Stack
+TO DO: See if it is possible to update the sub module on the main-solution if the test passes
