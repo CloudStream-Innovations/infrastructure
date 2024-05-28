@@ -30,7 +30,7 @@ This repository will become a submodule of the main solution. Therefore, limited
 
 ### Terraform Deployment
 
-For detailed instructions on deploying a Terraform solution like this one, you can refer to tutorials such as: [Beginner Terraform Tutorial: Launching EC2 in AWS using Terraform](https://medium.com/@rizkiprass/beginner-terraform-tutorial-launching-ec2-in-aws-using-terraform).
+For detailed instructions on deploying a Terraform solution like this one, you can refer to tutorials such as: [Beginner Terraform Tutorial: Launching EC2 in AWS using Terraform](https://medium.com/@rizkiprass/beginner-terraform-tutorial-launching-ec2-in-aws-using-terraform-73f6d99e6233).
 
 #### Basic Commands
 
