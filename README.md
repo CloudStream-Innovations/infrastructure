@@ -5,7 +5,7 @@ This repo contains the Terraform IaC for this project.
 ## TOC
 
 - [Description](#description)
-- [Deployment](#deployemnt)
+- [Deployment](#deployment)
 - [Testing](#testing)
 
 ## Description
