@@ -2,10 +2,10 @@
 # NOTE: MWAA Airflow environment takes minimum of 20 mins
 #-----------------------------------------------------------
 module "mwaa" {
-  source = "../.."
+  source = "github.com/aws-ia/terraform-aws-mwaa"
 
   name              = var.name
-  airflow_version   = "2.8.1"    # Update version, taken from here: https://docs.aws.amazon.com/mwaa/latest/userguide/airflow-versions.html#airflow-versions-official
+  airflow_version   = "2.8.1" # Update version, taken from here: https://docs.aws.amazon.com/mwaa/latest/userguide/airflow-versions.html#airflow-versions-official
   environment_class = "mw1.medium"
   create_s3_bucket  = false
   source_bucket_arn = aws_s3_bucket.this.arn
